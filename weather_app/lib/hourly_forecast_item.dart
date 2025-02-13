@@ -13,8 +13,8 @@ class HourlyForecastItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: const Color.fromARGB(255, 66, 66, 66),
-      elevation: 8,
+      color: const Color.fromARGB(255, 95, 94, 94),
+      elevation: 6,
       child: Container(
         width: 100,
         padding: const EdgeInsets.all(8.0),
@@ -26,6 +26,8 @@ class HourlyForecastItem extends StatelessWidget {
             Text(
               time,
               style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
             ),
             const SizedBox(height: 8),
             Icon(icon, size: 42),
